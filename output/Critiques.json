@@ -1,0 +1,371 @@
+[
+    {
+        "Groundedness Evaluation":"The question can be unambiguously answered from the context. The context provides information about the authors and their contributions to the development of the Transformer model.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is extremely useful for machine learning developers building NLP applications. Understanding the origins and development of the Transformer model can provide valuable insights into its architecture and capabilities.",
+        "Relevance Rating":"5",
+        "question":"Who designed and implemented the first Transformer models?",
+        "answer":"Ashish Vaswani and Illia Polosukhin",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"This question can be clearly answered from the context as it explicitly mentions the number of identical layers in the encoder and decoder stacks in the section 3.1 Encoder and Decoder Stacks.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications as it provides specific architectural details of the Transformer model, which is a crucial component in many NLP models.",
+        "Relevance Rating":"5",
+        "question":"What is the number of identical layers in the encoder and decoder stacks?",
+        "answer":"6",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context clearly states that all sub-layers in the model produce outputs of dimension dmodel = 512.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"Knowing the output dimension of sub-layers is crucial for understanding the architecture of the Transformer model, which is a fundamental component of many NLP applications.",
+        "Relevance Rating":"5",
+        "question":"What is the dimension of the output produced by all sub-layers in the model?",
+        "answer":"512",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides detailed information about the Transformer model architecture, including the encoder and decoder stacks, and the use of residual connections and layer normalization. The question is directly related to this context, and the answer can be found by understanding the purpose of residual connections and layer normalization in the encoder and decoder.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is extremely useful for machine learning developers building NLP applications, as the Transformer model is widely used in many NLP tasks, and understanding the purpose of residual connections and layer normalization is crucial for implementing and fine-tuning the model.",
+        "Relevance Rating":"5",
+        "question":"What is the purpose of the residual connection and layer normalization in the encoder and decoder?",
+        "answer":"To facilitate residual connections and layer normalization",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a clear description of the Multi-Head Attention mechanism and its components, including the number of parallel attention layers or heads.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, as it provides a key detail about the architecture of the Transformer model and its attention mechanism.",
+        "Relevance Rating":"5",
+        "question":"How many parallel attention layers or heads are employed in the Multi-Head Attention mechanism?",
+        "answer":"8",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a detailed explanation of the scaled dot-product attention mechanism, including the formula for computing attention and the reasoning behind the scaling factor of 1\/\u221adk. The question can be answered unambiguously based on the given context.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely relevant to machine learning developers building NLP applications, as it pertains to a key component of the Transformer architecture and its implementation details.",
+        "Relevance Rating":"5",
+        "question":"What is the purpose of the scaling factor of 1\/\u221adk in the Scaled Dot-Product Attention?",
+        "answer":"To counteract the effect of large dot products pushing the softmax function into regions with extremely small gradients",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question can be answered with some ambiguity based on the given context. The context explains the benefits of multi-head attention, but it does not explicitly compare it with single attention.",
+        "Groundedness Rating":"3",
+        "Relevance Evaluation":"The question is extremely useful for machine learning developers building NLP applications, as understanding the benefits of multi-head attention is crucial for building effective transformer models.",
+        "Relevance Rating":"5",
+        "question":"What is the benefit of using Multi-Head Attention instead of single attention?",
+        "answer":"It allows the model to jointly attend to information from different representation subspaces at different positions",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides clear information about the Scaled Dot-Product Attention mechanism, including the dimensions of queries, keys, and values.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is very useful for machine learning developers building NLP applications, as understanding the input dimensions is crucial for implementing the Transformer model and its attention mechanisms.",
+        "Relevance Rating":"5",
+        "question":"What is the input dimension of the queries, keys, and values in the Scaled Dot-Product Attention?",
+        "answer":"dk, dk, and dv respectively",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a clear explanation of both additive attention and dot-product attention. The text explains that additive attention computes the compatibility function using a feed-forward network with a single hidden layer, while dot-product attention uses the dot products of the query with all keys, divided by the square root of dk, and applies a softmax function to obtain the weights on the values.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, as understanding the different types of attention mechanisms is crucial for building and working with transformer-based models.",
+        "Relevance Rating":"5",
+        "question":"What is the difference between additive attention and dot-product attention?",
+        "answer":"Additive attention computes the compatibility function using a feed-forward network with a single hidden layer, while dot-product attention uses a dot product and scaling factor",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context explains the attention function and the matrix multiplication involved in it, specifically in the Scaled Dot-Product Attention mechanism. The purpose of the matrix multiplication is clearly stated in Equation (1) as computing the attention weights.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"Understanding the attention function and its components, including the matrix multiplication, is crucial for machine learning developers building NLP applications, particularly those involving transformers and self-attention mechanisms.",
+        "Relevance Rating":"5",
+        "question":"What is the purpose of the matrix multiplication in the attention function?",
+        "answer":"To compute the dot products of the query with all keys",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question is asking about the function of the softmax function in the attention mechanism. The context provides a detailed explanation of the attention mechanism, including the role of the softmax function in computing the weights on the values. Therefore, the question can be clearly and unambiguously answered from the context.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is extremely useful for machine learning developers building NLP applications. Understanding the attention mechanism and the role of softmax is crucial for developing models like the Transformer, which is a widely-used architecture in NLP.",
+        "Relevance Rating":"5",
+        "question":"What is the function of the softmax function in the attention mechanism?",
+        "answer":"To obtain the weights on the values",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question can be clearly answered from the context, as the dimensionality of the input and output in the feed-forward network is given as dmodel = 512.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, as understanding the dimensionality of the input and output in the feed-forward network is crucial for building and training a Transformer model.",
+        "Relevance Rating":"5",
+        "question":"What is the dimensionality of the input and output in the feed-forward network?",
+        "answer":"512",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context explicitly mentions the dimensionality of the inner layer in the feed-forward network, which is dff=2048.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This information is useful for machine learning developers building NLP applications, particularly those using transformer-based architectures, as it helps in understanding the design choices and internal workings of the model.",
+        "Relevance Rating":"5",
+        "question":"What is the inner-layer dimensionality in the feed-forward network?",
+        "answer":"2048",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question can be clearly answered from the context. The context explains that positional encoding is used to inject information about the relative or absolute position of the tokens in the sequence, as the model does not contain recurrence and convolution.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, as understanding the purpose of positional encoding is crucial in building effective sequence-to-sequence models.",
+        "Relevance Rating":"5",
+        "question":"What is the purpose of positional encoding in the model?",
+        "answer":"To inject information about the relative or absolute position of the tokens in the sequence.",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides explicit information about how the keys, values, and queries are obtained in the self-attention layer in the encoder. It is clearly stated that in the encoder, all of the keys, values, and queries come from the same place, which is the output of the previous layer in the encoder.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, especially those using the Transformer architecture. Understanding how the keys, values, and queries are obtained is crucial for implementing self-attention layers.",
+        "Relevance Rating":"5",
+        "question":"How are the keys, values, and queries obtained in the self-attention layer in the encoder?",
+        "answer":"They come from the same place, the output of the previous layer in the encoder.",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides sufficient information to answer the question, specifically in the section \"3.4 Embeddings and Softmax\" where it is mentioned that a learned linear transformation and softmax function are used to convert the decoder output to predicted next-token probabilities.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, as it directly relates to the process of generating probabilities for next tokens in sequence-to-sequence models.",
+        "Relevance Rating":"5",
+        "question":"What is the function used to convert the decoder output to predicted next-token probabilities?",
+        "answer":"Softmax function",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question can be directly answered from the context, as it explains the need to prevent leftward information flow in the decoder to preserve the auto-regressive property, which is achieved by masking out (setting to \u2212\u221e) all values in the input of the softmax that correspond to illegal connections.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is highly relevant for machine learning developers building NLP applications, as understanding the importance of masking out certain values in the decoder self-attention layer is crucial for implementing the Transformer architecture correctly.",
+        "Relevance Rating":"5",
+        "question":"Why is it necessary to mask out certain values in the decoder self-attention layer?",
+        "answer":"To prevent leftward information flow and preserve the auto-regressive property.",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a table (Table 1) that explicitly mentions the computational complexity of self-attention layers as O(n2\u00b7d).",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, as understanding the computational complexity of self-attention layers is crucial for designing efficient models.",
+        "Relevance Rating":"5",
+        "question":"What is the computational complexity of self-attention layers?",
+        "answer":"O(n^2*d)",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context explains the positional encoding function and the authors' hypothesis about how it would help the model, specifically that it would allow the model to easily learn to attend by relative positions.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is relevant to machine learning developers building NLP applications, especially those interested in sequence-to-sequence models and Transformer architecture.",
+        "Relevance Rating":"5",
+        "question":"How do the authors hypothesize the sinusoidal positional encoding function would help the model?",
+        "answer":"By allowing the model to easily learn to attend by relative positions.",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a table (Table 1) that explicitly mentions the minimum number of sequential operations required in self-attention layers. The table states that the minimum number of sequential operations for Self-Attention layers is O(1).",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, as it relates to the complexity and efficiency of self-attention layers, a crucial component of many NLP models.",
+        "Relevance Rating":"5",
+        "question":"What is the minimum number of sequential operations required in self-attention layers?",
+        "answer":"O(1)",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question can be answered clearly and unambiguously from the context, as the authors compare self-attention layers to recurrent and convolutional layers in Section 4 of the context, specifically discussing the total computational complexity per layer, the amount of computation that can be parallelized, and the maximum path length between long-range dependencies.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, as understanding the comparison between self-attention layers and other types of layers is crucial for designing and implementing effective sequence transduction models.",
+        "Relevance Rating":"5",
+        "question":"How do the authors compare self-attention layers to recurrent and convolutional layers?",
+        "answer":"By considering total computational complexity, parallelizability, and maximum path length between long-range dependencies.",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a direct reference to the capacity of a K80 GPU, which is mentioned as 2.8 TFLOPS in the sentence \"We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively.\" This makes it possible to answer the question unambiguously.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, as it provides a critical piece of information for estimating the computational resources required to train models.",
+        "Relevance Rating":"5",
+        "question":"What is the estimated sustained single-precision floating-point capacity of a K80 GPU?",
+        "answer":"2.8 TFLOPS",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The answer to this question can be directly found in the context, specifically in the section 6.3 English Constituency Parsing. It is stated that \"We used a vocabulary of 16K tokens for the WSJ only setting...\".",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is relevant to machine learning developers building NLP applications as it provides a specific detail about the model's configuration for a particular task, which can be useful for comparison or replication.",
+        "Relevance Rating":"4",
+        "question":"How many tokens were used in the vocabulary for the WSJ only setting in English constituency parsing?",
+        "answer":"16K",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question can be answered unambiguously from the context. The context provides a table (Table 3) that lists the perplexity of the base model on the English-to-German translation development set.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is extremely useful for machine learning developers building NLP applications, especially those working on translation tasks. Perplexity is a key performance metric for language models, and knowing the perplexity of the base model can help developers understand the model's performance and make informed decisions about model variations and improvements.",
+        "Relevance Rating":"5",
+        "question":"What is the perplexity of the base model on the English-to-German translation development set?",
+        "answer":"4.92",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question can be answered unambiguously from the context. The context provides a table (Table 3) that lists the variations of the Transformer architecture, including the \"big\" model, and its corresponding number of parameters.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, particularly those interested in the Transformer architecture and its variations. Knowing the number of parameters in a model is important for understanding its computational requirements and potential performance.",
+        "Relevance Rating":"5",
+        "question":"How many parameters does the \"big\" model have?",
+        "answer":"213 million",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The answer can be found in the context, specifically in the section about English Constituency Parsing, where it is mentioned that \"We increased the maximum output length to input length + 300.\"",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is relevant to machine learning developers building NLP applications, particularly those working on constituency parsing tasks, as it provides information about the output length used during inference.",
+        "Relevance Rating":"4",
+        "question":"What is the maximum output length used during inference in English constituency parsing?",
+        "answer":"input length + 300",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a clear answer to the question, as it states \"We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the Penn Treebank [25], about 40K training sentences.\"",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is relevant for machine learning developers building NLP applications, as the Penn Treebank is a widely used dataset in NLP and the question is related to language modeling and sequence-to-sequence tasks.",
+        "Relevance Rating":"5",
+        "question":"How many training sentences are in the Wall Street Journal (WSJ) portion of the Penn Treebank?",
+        "answer":"40K",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question can be answered unambiguously from the context. The F1 score of the Transformer on the WSJ 23 test set in the semi-supervised setting is explicitly mentioned in Table 4 of the context.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is extremely useful for machine learning developers building NLP applications, especially those working on sequence-to-sequence models and\/or English constituency parsing tasks.",
+        "Relevance Rating":"5",
+        "question":"What is the F1 score of the Transformer on the WSJ 23 test set in the semi-supervised setting?",
+        "answer":"92.7",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question is asking about the number of GPUs used to train a model, but the context only provides a formula to estimate the number of floating-point operations. There is no direct information about the number of GPUs used.",
+        "Groundedness Rating":"1",
+        "Relevance Evaluation":"The question seems to be relevant for machine learning developers building NLP applications, as it might be useful to know the computational resources required to train a model. However, the context does not provide the necessary information to answer this question.",
+        "Relevance Rating":"3",
+        "question":"How many GPUs were used to train a model, according to the estimate of the number of floating point operations?",
+        "answer":"Not specified (unknown)",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question can be clearly and unambiguously answered from the context, as the beam size is explicitly mentioned in the section 6.3 English Constituency Parsing.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is useful for machine learning developers building NLP applications, particularly those working with transformer models and beam search, as it provides specific information about the hyperparameters used in a particular experiment.",
+        "Relevance Rating":"5",
+        "question":"What is the beam size used in beam search during inference in English constituency parsing?",
+        "answer":"21",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question cannot be directly answered from the context as there is no explicit mention of the learning rate used in the English-to-German base translation model.",
+        "Groundedness Rating":"1",
+        "Relevance Evaluation":"The learning rate is an important hyperparameter in machine learning and NLP applications, and knowing its value can be useful for developers building similar models.",
+        "Relevance Rating":"4",
+        "question":"What is the learning rate used in the English-to-German base translation model?",
+        "answer":"Not specified (unknown)",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a paper title by Yonghui Wu and others, which is \"Google's neural machine translation system",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is relevant to machine learning developers building NLP applications, as it pertains to a specific paper in the field of neural machine translation.",
+        "Relevance Rating":"5",
+        "question":"What is the title of the paper by Yonghui Wu and others?",
+        "answer":"Google\u2019s neural machine translation system: Bridging the gap between human and machine translation.",
+        "":""
+    },
+    {
+        "Groundedness Evaluation":"The question can be answered unambiguously from the context. The context mentions \"a majority of American governments have passed new laws since 2009 making the registration or voting process more difficult.\"",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is not relevant to machine learning developers building NLP applications. The context is about advances in neural information processing systems, and the question is about voting laws, which are unrelated.",
+        "Relevance Rating":"1",
+        "question":"In what year were new laws passed making the registration or voting process more difficult?",
+        "answer":"2009",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question can be clearly answered from the context, as it is explicitly mentioned in the figures that the attention mechanism is in layer 5 of 6.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is extremely useful for machine learning developers building NLP applications, as understanding the architecture and inner workings of neural machine translation systems is crucial for developing and improving NLP models.",
+        "Relevance Rating":"5",
+        "question":"How many layers are in the encoder self-attention mechanism shown in Figures 3-5?",
+        "answer":"6",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a reference to the paper by Muhua Zhu et al. titled \"Fast and accurate shift-reduce constituent parsing\" and mentions the proceedings of the 51st Annual Meeting of the ACL (Volume 1",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is relevant to machine learning developers building NLP applications as it deals with a specific paper on constituent parsing, which is a fundamental task in NLP.",
+        "Relevance Rating":"4",
+        "question":"What is the title of the conference where Muhua Zhu and others presented their paper on shift-reduce constituent parsing?",
+        "answer":"51st Annual Meeting of the ACL",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a list of papers in the field of neural machine translation, and one of the papers ([39]) is titled \"Deep recurrent models with fast-forward connections for neural machine translation\". The authors of this paper are Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu. Therefore, the question can be clearly answered from the context.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is directly related to the field of neural machine translation and deep learning, which are crucial topics in NLP. Knowing the authors of influential papers can be useful for machine learning developers building NLP applications.",
+        "Relevance Rating":"5",
+        "question":"Who are the authors of the paper on deep recurrent models with fast-forward connections for neural machine translation?",
+        "answer":"Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a specific paper by Yonghui Wu and others, with an arXiv preprint number mentioned as arXiv",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is relevant for machine learning developers building NLP applications, as it seeks specific information about a research paper in the field.",
+        "Relevance Rating":"4",
+        "question":"What is the arXiv preprint number of the paper by Yonghui Wu and others?",
+        "answer":"arXiv:1609.08144",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a reference to the paper by Muhua Zhu and others, which includes the title \"Fast and accurate shift-reduce constituent parsing\". This information is explicitly mentioned in the context.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The title of the paper is useful for machine learning developers building NLP applications, especially those interested in constituent parsing. It provides specific information about a research paper that could be relevant to their work.",
+        "Relevance Rating":"4",
+        "question":"What is the title of the paper by Muhua Zhu and others?",
+        "answer":"Fast and accurate shift-reduce constituent parsing",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context cite the paper by Muhua Zhu and others, which is [40] in the references, and the year is explicitly stated as 2013.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is relevant to machine learning developers building NLP applications as it inquires about a specific paper related to neural machine translation, and the year of publication is useful information for those interested in the development of the field.",
+        "Relevance Rating":"4",
+        "question":"In what year was the paper by Muhua Zhu and others published?",
+        "answer":"2013",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The context provides a clear reference to the paper by Jie Zhou and others, which is [39] Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu. Deep recurrent models with fast-forward connections for neural machine translation. CoRR , abs\/1606.04199, 2016. The CoRR number is explicitly mentioned in the reference.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"The question is asking about a specific paper in the field of NLP, which could be of interest to machine learning developers building NLP applications. The paper's topic, neural machine translation, is a relevant research area in NLP.",
+        "Relevance Rating":"5",
+        "question":"What is the CoRR number of the paper by Jie Zhou and others?",
+        "answer":"abs\/1606.04199",
+        "":null
+    },
+    {
+        "Groundedness Evaluation":"The question can be unambiguously answered by looking at Figure 4, which explicitly shows two attention heads.",
+        "Groundedness Rating":"5",
+        "Relevance Evaluation":"This question is relevant for machine learning developers building NLP applications, as understanding attention heads is important for transformer-based models.",
+        "Relevance Rating":"5",
+        "question":"How many attention heads are shown in Figure 4?",
+        "answer":"2",
+        "":null
+    }
+]
