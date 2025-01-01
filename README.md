@@ -88,10 +88,11 @@ project/ <br>
 
 The system evaluates Questions & answers based on:
 - Groundedness : how relevante is the question compaired to question (1-5 scale)
-- Relevance (1-5 scale) <br>
-The system evaluates Questions & answers based on:
-- a feedback and score between 1 & 5
-- Answer accuracy compared to reference
+- Relevance (1-5 scale)
+<br>
+The system evaluates Rag Answers based on: <br>
+   - a feedback and score between 1 & 5 <br>
+   - Answer accuracy compared to reference
 
 ## Output Format
 
